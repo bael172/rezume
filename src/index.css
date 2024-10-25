@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main{
+  margin-left: 10%;
+  margin-top:5%;
+}
+.flex{
+  display:flex;
+  flex-flow: row,nowrap;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container{
+
+  display: grid;
+  grid-template-rows:repeat(2,minmax(auto,max-content));
+  grid-template-columns: repeat(2,minmax(auto,max-content));
+  gap:10px;
+  background-color: "black";
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.container *{
+  vertical-align: middle;
+}
